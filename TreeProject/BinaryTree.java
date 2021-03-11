@@ -78,4 +78,12 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>
         if ((rightTree != null) && (rightTree != this))
             rightTree.clear();
     } // end initializeTree
+
+      /**
+     * calls postorderTraverse(BinaryNode<T> node) prints (using post-order
+     * traversal) all nodes in the "whole" tree
+     */
+    public void postorderTraverse() 
+    {
+    }
 }
