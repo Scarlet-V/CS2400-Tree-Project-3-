@@ -81,4 +81,14 @@ class BinaryNode<T>
     {
         return rightChild;
     } // end getRightChild
+
+     /**
+     * Sets this node’s right child to a given node.
+     *
+     * @param newRightChild A node that will be the right child.
+     */
+    public void setRightChild(BinaryNode<T> newRightChild)
+    {
+        rightChild = newRightChild;
+    } // end setRightChild
 }
