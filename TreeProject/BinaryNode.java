@@ -101,4 +101,14 @@ class BinaryNode<T>
     {
         return rightChild != null;
     } // end hasRightChild
+
+    /**
+     * Detects whether this node is a leaf.
+     *
+     * @return True if the node is a leaf.
+     */
+    public boolean isLeaf() 
+    {
+        return (leftChild == null) && (rightChild == null);
+    } // end isLeaf
 }
