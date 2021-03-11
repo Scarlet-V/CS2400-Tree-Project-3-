@@ -148,4 +148,22 @@ class BinaryNode<T>
     {
         return 0;
     } // end getHeight
-}
+
+     /**
+     * A Recursive Method in the BinaryNode Class Counts the nodes in the
+     * subtree rooted at "this" node.
+     *
+     * @return The number of nodes in the subtree rooted at "this" node.
+     */
+    public int getNumberOfNodes_binaryNodeMethod() 
+    {
+        int leftNumber = 0;
+        int rightNumber = 0;
+        if (leftChild != null)
+            leftNumber = leftChild.getNumberOfNodes_binaryNodeMethod();
+        if (rightChild != null)
+            rightNumber = rightChild.getNumberOfNodes_binaryNodeMethod();
+        return 1 + leftNumber + rightNumber;
+    } // end getNumberOfNodes
+    
+} // end BinaryNode
