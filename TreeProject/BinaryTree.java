@@ -47,4 +47,9 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>
     {
         root = null;
     } // end clear
+
+    protected void setRootNode(BinaryNode<T> rootNode) 
+    {
+        root = rootNode;
+    } // end setRootNode
 }
