@@ -61,4 +61,14 @@ class BinaryNode<T>
     {
         leftChild = newLeftChild;
     } // end setLeftChild
+
+     /**
+     * Detects whether this node has a left child.
+     *
+     * @return True if the node has a left child.
+     */
+    public boolean hasLeftChild() 
+    {
+        return leftChild != null;
+    } // end hasLeftChild
 }
