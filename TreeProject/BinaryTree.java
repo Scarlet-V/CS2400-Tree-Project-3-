@@ -37,4 +37,9 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>
         else
             return root.getData();
     } // end getRootData
+
+    public boolean isEmpty() 
+    {
+        return root == null;
+    } // end isEmpty
 }
