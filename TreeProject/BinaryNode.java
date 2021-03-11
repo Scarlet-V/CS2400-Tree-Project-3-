@@ -91,4 +91,14 @@ class BinaryNode<T>
     {
         rightChild = newRightChild;
     } // end setRightChild
+
+    /**
+     * Detects whether this node has a right child.
+     *
+     * @return True if the node has a right child.
+     */
+    public boolean hasRightChild() 
+    {
+        return rightChild != null;
+    } // end hasRightChild
 }
