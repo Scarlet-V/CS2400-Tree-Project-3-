@@ -29,4 +29,12 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>
     {
         root.setData(rootData);
     } // end setRootData
+
+    public T getRootData() 
+    {
+        if (isEmpty())
+            throw new EmptyTreeException();
+        else
+            return root.getData();
+    } // end getRootData
 }
