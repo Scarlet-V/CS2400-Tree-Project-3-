@@ -137,4 +137,15 @@ class BinaryNode<T>
     public void postorderTraverse_binaryNodeMethod() 
     {
     }
+
+    /**
+     * A Recursive Method in the BinaryNode Class Computes the height of the
+     * subtree rooted at "this" node.
+     *
+     * @return The height of the subtree rooted at "this" node.
+     */
+    public int getHeight_binaryNodeMethod() 
+    {
+        return 0;
+    } // end getHeight
 }
