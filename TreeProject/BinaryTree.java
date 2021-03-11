@@ -113,4 +113,21 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>
     {
         return getHeight(root);
     } // end getHeight
+
+    /**
+     * A Recursive Method in the BinaryTree Class Computes the height of the
+     * subtree rooted at this node.
+     *
+     * @return The height of the subtree rooted at this node.
+     */
+    private int getHeight(BinaryNode<T> node) 
+    {
+        int height = 0;
+        if (node != null)
+            height = 1 + Math.max(getHeight(node.getLeftChild()),
+                    getHeight(node.getRightChild()));
+        return height;
+    } // end getHeight
+
+
 }
