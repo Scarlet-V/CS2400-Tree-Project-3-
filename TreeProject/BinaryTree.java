@@ -42,4 +42,9 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>
     {
         return root == null;
     } // end isEmpty
+
+    public void clear() 
+    {
+        root = null;
+    } // end clear
 }
