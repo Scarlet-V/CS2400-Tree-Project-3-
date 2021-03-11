@@ -51,4 +51,14 @@ class BinaryNode<T>
     {
         return leftChild;
     } // end getLeftChild
+
+    /**
+     * Sets this node’s left child to a given node.
+     *
+     * @param newLeftChild A node that will be the left child.
+     */
+    public void setLeftChild(BinaryNode<T> newLeftChild) 
+    {
+        leftChild = newLeftChild;
+    } // end setLeftChild
 }
