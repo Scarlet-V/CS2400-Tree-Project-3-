@@ -129,5 +129,13 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>
         return height;
     } // end getHeight
 
-
+    /**
+     * The following calls getHeight_binaryNodeMethod() which is a recursive
+     * binaryNode class method Computes the height of the "whole" tree.
+     *
+     * @return The height of the "whole" tree.
+     */
+    public int getHeight_callBinaryNodeMethod() {
+        return 0;
+    } // end getHeight_callBinaryNodeMethod
 }
