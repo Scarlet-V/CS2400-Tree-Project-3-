@@ -161,4 +161,20 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>
     {
         return 0;
     } // end getNumberOfNodes
-}
+
+     /**
+     * The following calls getNumberOfNodes_binaryNodeMethod() which is a
+     * recursive binaryNode class method Counts the nodes in the "whole" tree
+     *
+     * @return The number of nodes in the "whole" tree.
+     */
+    public int getNumberOfNodes_callBinaryNodeMethod() 
+    {
+        int numberOfNodes = 0;
+        if (root != null)
+            numberOfNodes = root.getNumberOfNodes_binaryNodeMethod();
+        return numberOfNodes;
+    } // end getNumberOfNodes_callBinaryNodeMethod
+    
+} // end BinaryTree
+
