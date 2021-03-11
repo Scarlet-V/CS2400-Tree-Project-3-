@@ -41,4 +41,14 @@ class BinaryNode<T>
     {
         data = newData;
     } // end setData
+
+      /**
+     * Retrieves the left child of this node.
+     *
+     * @return A reference to this node's left child.
+     */
+    public BinaryNode<T> getLeftChild() 
+    {
+        return leftChild;
+    } // end getLeftChild
 }
