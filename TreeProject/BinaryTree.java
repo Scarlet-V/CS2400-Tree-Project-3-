@@ -103,4 +103,14 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>
     public void postorderTraverse_callBinaryNodeMethod() 
     {
     }
+
+    /**
+     * calls getHeight(BinaryNode<T> node)
+     *
+     * @return The height of the "whole" tree
+     */
+    public int getHeight() 
+    {
+        return getHeight(root);
+    } // end getHeight
 }
