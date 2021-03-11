@@ -111,4 +111,22 @@ class BinaryNode<T>
     {
         return (leftChild == null) && (rightChild == null);
     } // end isLeaf
+
+      /**
+     * A Recursion Example in the BinaryNode Class Copies the subtree rooted at
+     * this node.
+     *
+     * @return The root of a copy of the subtree rooted at this node.
+     */
+    public BinaryNode<T> copy() 
+    {
+        BinaryNode<T> newRoot = new BinaryNode<>(data);
+        if (leftChild != null)
+            newRoot.setLeftChild(leftChild.copy());
+        
+        if (rightChild != null)
+            newRoot.setRightChild(rightChild.copy());
+        
+        return newRoot;
+    } // end copy
 }
