@@ -94,4 +94,13 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>
     private void postorderTraverse(BinaryNode<T> node) 
     {
     }
+
+     /**
+     * The following calls postorderTraverse_binaryNodeMethod(), which is a
+     * recursive binaryNode class method prints (using post-order traversal) all
+     * nodes in the "whole" tree
+     */
+    public void postorderTraverse_callBinaryNodeMethod() 
+    {
+    }
 }
