@@ -52,4 +52,9 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>
     {
         root = rootNode;
     } // end setRootNode
+
+    protected BinaryNode<T> getRootNode() 
+    {
+        return root;
+    } // end getRootNode
 }
