@@ -21,4 +21,14 @@ class BinaryNode<T>
         leftChild = newLeftChild;
         rightChild = newRightChild;
     } // end constructor
+
+    /**
+     * Retrieves the data portion of this node.
+     *
+     * @return The object in the data portion of the node.
+     */
+    public T getData() 
+    {
+        return data;
+    } // end getData
 }
