@@ -13,4 +13,9 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>
     {
         root = new BinaryNode<>(rootData);
     } // end constructor
+
+    public BinaryTree(T rootData, BinaryTree<T> leftTree, BinaryTree<T> rightTree) 
+    {
+        initializeTree(rootData, leftTree, rightTree);
+    } // end constructor
 }
