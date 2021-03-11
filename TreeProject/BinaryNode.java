@@ -14,4 +14,11 @@ class BinaryNode<T>
     {
         this(dataPortion, null, null); // Call next constructor
     } // end constructor
+
+    public BinaryNode(T dataPortion, BinaryNode<T> newLeftChild, BinaryNode<T> newRightChild) 
+    {
+        data = dataPortion;
+        leftChild = newLeftChild;
+        rightChild = newRightChild;
+    } // end constructor
 }
