@@ -74,4 +74,10 @@ public class DriverBT
         System.out.println("         G ");
         System.out.println();
     } // end createTree
+
+    public static void createTree2(BinaryTree<String> tree) 
+    {
+    
+    } // end createTree2
+    
 }
