@@ -18,4 +18,10 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>
     {
         initializeTree(rootData, leftTree, rightTree);
     } // end constructor
+
+    public void setTree(T rootData, BinaryTreeInterface<T> leftTree, BinaryTreeInterface<T> rightTree) 
+    {
+        initializeTree(rootData, (BinaryTree<T>) leftTree,
+                (BinaryTree<T>) rightTree);
+    } // end setTree
 }
