@@ -24,4 +24,9 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>
         initializeTree(rootData, (BinaryTree<T>) leftTree,
                 (BinaryTree<T>) rightTree);
     } // end setTree
+
+    public void setRootData(T rootData) 
+    {
+        root.setData(rootData);
+    } // end setRootData
 }
