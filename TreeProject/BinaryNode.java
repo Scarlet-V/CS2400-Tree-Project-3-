@@ -31,4 +31,14 @@ class BinaryNode<T>
     {
         return data;
     } // end getData
+
+    /**
+     * Sets the data portion of this node.
+     *
+     * @param newData The data object.
+     */
+    public void setData(T newData) 
+    {
+        data = newData;
+    } // end setData
 }
