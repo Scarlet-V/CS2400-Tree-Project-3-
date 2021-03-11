@@ -71,4 +71,14 @@ class BinaryNode<T>
     {
         return leftChild != null;
     } // end hasLeftChild
+
+    /**
+     * Retrieves the right child of this node.
+     *
+     * @return A reference to this node's right child.
+     */
+    public BinaryNode<T> getRightChild() 
+    {
+        return rightChild;
+    } // end getRightChild
 }
