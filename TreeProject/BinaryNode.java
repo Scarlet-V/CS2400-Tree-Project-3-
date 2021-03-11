@@ -9,4 +9,9 @@ class BinaryNode<T>
     {
         this(null); // Call next constructor
     } // end default constructor
+
+    public BinaryNode(T dataPortion) 
+    {
+        this(dataPortion, null, null); // Call next constructor
+    } // end constructor
 }
