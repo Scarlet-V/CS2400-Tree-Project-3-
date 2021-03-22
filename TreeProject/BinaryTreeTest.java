@@ -35,7 +35,8 @@ class BinaryTreeTest {
     } // end createTree2
 
     @Test
-	void should_ReturnTrue_When_PostorderTraversalIsCorrect() {
+	void should_ReturnTrue_When_PostorderTraversalIsCorrect() 
+    {
 		// given
 		 BinaryTree<String> aTree = new BinaryTree<>();
 		 createTree1(aTree);
@@ -51,7 +52,7 @@ class BinaryTreeTest {
     @Test
 	void should_ReturnCorrectHeight_When_HeightIsCalled() {
 		// given
-        
+
 		 BinaryTree<String> aTree = new BinaryTree<>();
 		 createTree1(aTree);
 		 int expected = 4;
@@ -71,6 +72,20 @@ class BinaryTreeTest {
 		 
 		//when
 		 int actual = aTree.getHeight();
+		//then
+		assertEquals(expected,actual);
+	}
+
+    @Test
+	void should_ReturnNumberOfNodes_When_NodeIsNotNull() 
+    {
+		// given
+		 BinaryTree<String> aTree = new BinaryTree<>();
+		 createTree1(aTree);
+		 int expected = 8;
+		 
+		//when
+		 int actual = aTree.getNumberOfNodes();
 		//then
 		assertEquals(expected,actual);
 	}
