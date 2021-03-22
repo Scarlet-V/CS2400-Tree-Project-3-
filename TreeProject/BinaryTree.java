@@ -103,6 +103,11 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>
     	}
     }
 
+    public String Display() 
+    {
+    	return ans;
+    }
+
      /**
      * The following calls postorderTraverse_binaryNodeMethod(), which is a
      * recursive binaryNode class method prints (using post-order traversal) all
@@ -110,7 +115,8 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>
      */
     public void postorderTraverse_callBinaryNodeMethod() 
     {
-        postorderTraverse_BinaryNodeMethod(this.root);
+        root.postorderTraverse_binaryNodeMethod();
+    	System.out.println();
 
     }
 
