@@ -47,6 +47,19 @@ class BinaryTreeTest {
 		//then
 		assertEquals(expected,actual);
 	}
+
+    @Test
+	void should_ReturnCorrectHeight_When_HeightIsCalled() {
+		// given
+		 BinaryTree<String> aTree = new BinaryTree<>();
+		 createTree1(aTree);
+		 int expected = 4;
+		 
+		//when
+		 int actual = aTree.getHeight();
+		//then
+		assertEquals(expected,actual);
+	}
 }
     
 	
