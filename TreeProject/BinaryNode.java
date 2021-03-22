@@ -1,6 +1,7 @@
 package TreeProject;
-class BinaryNode<T> 
+public class BinaryNode<T> 
 {
+    String ans="";
     private T data;
     private BinaryNode<T> leftChild;  // Reference to left child
     private BinaryNode<T> rightChild; // Reference to right child
@@ -136,6 +137,15 @@ class BinaryNode<T>
      */
     public void postorderTraverse_binaryNodeMethod() 
     {
+        if(this != null) 
+        {
+    		if(this.hasLeftChild())
+    			this.getLeftChild().postorderTraverse_binaryNodeMethod();
+    		if(this.hasRightChild())
+    			this.getRightChild().postorderTraverse_binaryNodeMethod();
+    		ans+=(this.getData()+ " ");
+    		System.out.print(this.getData()+ " ");
+    	}
     }
 
     /**
