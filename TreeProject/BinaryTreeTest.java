@@ -89,6 +89,18 @@ class BinaryTreeTest {
 		//then
 		assertEquals(expected,actual);
 	}
+    @Test
+	void should_ReturnNumberOfNodes_When_NodeINull() 
+    {
+		// given
+		 BinaryTree<String> aTree = new BinaryTree<>();
+		 int expected = 0;
+		 
+		//when
+		 int actual = aTree.getNumberOfNodes();
+		//then
+		assertEquals(expected,actual);
+	}
 }
     
 	
