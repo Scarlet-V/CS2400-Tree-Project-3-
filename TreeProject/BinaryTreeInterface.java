@@ -1,6 +1,6 @@
 package TreeProject;
 
-public class BinaryTreeInterface<T> extends TreeInterface<T> 
+public interface BinaryTreeInterface<T> extends TreeInterface<T> 
 {
     /**
      * Sets the data in the root of this binary tree.
@@ -8,6 +8,7 @@ public class BinaryTreeInterface<T> extends TreeInterface<T>
      * @param rootData The object that is the data for the tree's root.
      */
     public void setRootData(T rootData);
+   
     
     /**
      * Sets this binary tree to a new binary tree.
@@ -17,5 +18,6 @@ public class BinaryTreeInterface<T> extends TreeInterface<T>
      * @param rightTree The right subtree of the new tree.
      */
     public void setTree(T rootData, BinaryTreeInterface<T> leftTree, BinaryTreeInterface<T> rightTree);
+    
 } // end BinaryTreeInterface
 
