@@ -3,7 +3,7 @@ package TreeProject;
 public class BinaryTree<T> implements BinaryTreeInterface<T>  
 {
     private BinaryNode<T> root;
-
+    String ans="";
     public BinaryTree() 
     {
         root = null;
@@ -21,8 +21,7 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>
 
     public void setTree(T rootData, BinaryTreeInterface<T> leftTree, BinaryTreeInterface<T> rightTree) 
     {
-        initializeTree(rootData, (BinaryTree<T>) leftTree,
-                (BinaryTree<T>) rightTree);
+        initializeTree(rootData, (BinaryTree<T>) leftTree,(BinaryTree<T>) rightTree);
     } // end setTree
 
     public void setRootData(T rootData) 
@@ -85,7 +84,8 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>
      */
     public void postorderTraverse() 
     {
-        postorderTraverse(this.root);
+        postorderTraverse(root);
+    	System.out.println();
     }
 
     /**
