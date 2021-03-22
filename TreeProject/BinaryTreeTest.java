@@ -33,6 +33,20 @@ class BinaryTreeTest {
         System.out.println("     F    G     H");
         System.out.println();
     } // end createTree2
+
+    @Test
+	void should_ReturnTrue_When_PostorderTraversalIsCorrect() {
+		// given
+		 BinaryTree<String> aTree = new BinaryTree<>();
+		 createTree1(aTree);
+		 String expected = "B F D G H E C A ";
+		
+		//when
+		 aTree.postorderTraverse();
+		 String actual = aTree.Display();
+		//then
+		assertEquals(expected,actual);
+	}
 }
     
 	
