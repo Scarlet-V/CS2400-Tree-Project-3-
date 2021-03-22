@@ -85,6 +85,7 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>
      */
     public void postorderTraverse() 
     {
+        postorderTraverse(this.root);
     }
 
     /**
@@ -93,6 +94,12 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>
      */
     private void postorderTraverse(BinaryNode<T> node) 
     {
+        if(node!=null)
+        {
+            postorderTraverse(node.left);
+            postorderTraverse(node.right);
+            System.out.print(node.data+" ");
+        }
     }
 
      /**
@@ -102,6 +109,8 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>
      */
     public void postorderTraverse_callBinaryNodeMethod() 
     {
+        postorderTraverse_BinaryNodeMethod(this.root);
+
     }
 
     /**
@@ -137,10 +146,18 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>
      */
     public int getHeight_callBinaryNodeMethod() 
     {
-        return 0;
+        return this.getHeight_BinaryNodeMethod();
     } // end getHeight_callBinaryNodeMethod
 
+    public int getHeight_BinaryNodeMethod()
+    {
+        if(this==null){
+                return 0;
+        }
 
+        int h = Math.max(this.left.getHeight_BinaryNodeMethod(), this.right.getHeight_BinaryNodeMethod());
+        return h+1;
+}
     /**
      * calls getNumberOfNodes(BinaryNode<T> node)
      *
@@ -148,7 +165,7 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>
      */
     public int getNumberOfNodes() 
     {
-        return 0;
+        return getNumberOfNodes(this.root);
     } // end getNumberOfNodes
 
     /**
@@ -159,7 +176,10 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>
      */
     private int getNumberOfNodes(BinaryNode<T> node) 
     {
-        return 0;
+        if(node==null){
+            return 0;
+    }
+        return 1+getNumberOfNodes(this.left)+getNumberOfNodes(this.right);
     } // end getNumberOfNodes
 
      /**
@@ -175,6 +195,24 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>
             numberOfNodes = root.getNumberOfNodes_binaryNodeMethod();
         return numberOfNodes;
     } // end getNumberOfNodes_callBinaryNodeMethod
+
+    
     
 } // end BinaryTree
 
+public static void createTree2(BinaryNode<String> tree)
+{
+    BinaryNode<String> t;
+    tree = new BinaryNode<String>("A");
+    t = tree;
+    t.left = new BinaryNode<String>("B");
+    t.right = new BinaryNode<String>("C");
+    t = t.right;
+    t.left = new BinaryNode<String>("D");
+    t.left.left = new BinaryNode<String>("F");
+    t.right = new BinaryNode<String>("E");
+    t = t.right;
+    t.left = new BinaryNode<String>("G");
+    t.right = new BinaryNode<String>("H");
+}
+}
