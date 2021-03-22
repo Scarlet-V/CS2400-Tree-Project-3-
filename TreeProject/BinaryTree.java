@@ -153,18 +153,9 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>
      */
     public int getHeight_callBinaryNodeMethod() 
     {
-        return this.getHeight_BinaryNodeMethod();
+        return root.getHeight_binaryNodeMethod();
     } // end getHeight_callBinaryNodeMethod
 
-    public int getHeight_BinaryNodeMethod()
-    {
-        if(this==null){
-                return 0;
-        }
-
-        int h = Math.max(this.left.getHeight_BinaryNodeMethod(), this.right.getHeight_BinaryNodeMethod());
-        return h+1;
-}
     /**
      * calls getNumberOfNodes(BinaryNode<T> node)
      *
@@ -172,7 +163,11 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>
      */
     public int getNumberOfNodes() 
     {
-        return getNumberOfNodes(this.root);
+        if(root!=null)
+          {
+    		return getNumberOfNodes(root);
+          }
+    	return 0;
     } // end getNumberOfNodes
 
     /**
@@ -183,10 +178,14 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>
      */
     private int getNumberOfNodes(BinaryNode<T> node) 
     {
-        if(node==null){
-            return 0;
-    }
-        return 1+getNumberOfNodes(this.left)+getNumberOfNodes(this.right);
+        int leftNumber = 0;
+        int rightNumber = 0;
+        
+        if (node.hasLeftChild())
+            leftNumber = getNumberOfNodes(node.getLeftChild());
+        if (node.hasRightChild())
+            rightNumber = getNumberOfNodes(node.getRightChild());
+        return 1 + leftNumber + rightNumber;
     } // end getNumberOfNodes
 
      /**
