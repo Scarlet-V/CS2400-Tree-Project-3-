@@ -1,6 +1,6 @@
 package TreeProject;
 
-public class BinaryTree<T> implements BinaryTreeInterface<T>  
+public class BinaryTree<T> implements BinaryTreeInterface<T> 
 {
     private BinaryNode<T> root;
     String ans="";
@@ -206,19 +206,3 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>
     
 } // end BinaryTree
 
-public static void createTree2(BinaryNode<String> tree)
-{
-    BinaryNode<String> t;
-    tree = new BinaryNode<String>("A");
-    t = tree;
-    t.left = new BinaryNode<String>("B");
-    t.right = new BinaryNode<String>("C");
-    t = t.right;
-    t.left = new BinaryNode<String>("D");
-    t.left.left = new BinaryNode<String>("F");
-    t.right = new BinaryNode<String>("E");
-    t = t.right;
-    t.left = new BinaryNode<String>("G");
-    t.right = new BinaryNode<String>("H");
-}
-}
