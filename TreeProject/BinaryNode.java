@@ -130,7 +130,9 @@ public class BinaryNode<T>
         
         return newRoot;
     } // end copy
-
+    /* --------------------------------------------------------------------
+     * Part of Task 1 */
+    /**
      /**
      * A Recursive Method in the BinaryNode Class prints (using post-order
      * traversal) all nodes of the subtree rooted at "this" node
@@ -147,7 +149,10 @@ public class BinaryNode<T>
     		System.out.print(this.getData()+ " ");
     	}
     }
-
+    /*--------------------------------------------------------------------
+     * Part of Task 2*/
+    /**
+     
     /**
      * A Recursive Method in the BinaryNode Class Computes the height of the
      * subtree rooted at "this" node.
@@ -170,7 +175,8 @@ public class BinaryNode<T>
             
         return height;
     } // end getHeight
-
+  /* -------------------------------------------------------------------- */
+    /**
      /**
      * A Recursive Method in the BinaryNode Class Counts the nodes in the
      * subtree rooted at "this" node.
