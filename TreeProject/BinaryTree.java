@@ -77,7 +77,14 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>
         if ((rightTree != null) && (rightTree != this))
             rightTree.clear();
     } // end initializeTree
-
+/* -------------------------------------------------------------------- */
+    /* Task 1: Implement the 4 methods
+     *     . In BinaryTree.java
+     *          1. public void postorderTraverse();
+     *          2. private void postorderTraverse(BinaryNode<T> node)
+     *          3. public void postorderTraverse_callBinaryNodeMethod()
+     *     . In BinaryNode.java
+     *          4. public void postorderTraverse_binaryNodeMethod() */
       /**
      * calls postorderTraverse(BinaryNode<T> node) prints (using post-order
      * traversal) all nodes in the "whole" tree
@@ -119,7 +126,12 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>
     	System.out.println();
 
     }
-
+/* -------------------------------------------------------------------- */
+    /* Task 2: Implement the 2 methods
+     *     . In BinaryTree.java
+     *          1. public int getHeight_callBinaryNodeMethod()
+     *     . In BinaryNode.java
+     *          2. public int getHeight_binaryNodeMethod()*/
     /**
      * calls getHeight(BinaryNode<T> node)
      *
@@ -169,7 +181,11 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>
           }
     	return 0;
     } // end getNumberOfNodes
-
+/* -------------------------------------------------------------------- */
+    /* Task 3: Implement the 2 methods
+     *     . In BinaryTree.java
+     *          1. public int getNumberOfNodes()
+     *          2. private int getNumberOfNodes(BinaryNode<T> node)*/
     /**
      * A Recursive Method in the BinaryTree Class Counts the nodes in the
      * subtree rooted at this node.
